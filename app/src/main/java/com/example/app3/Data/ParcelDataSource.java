@@ -47,7 +47,7 @@ public class ParcelDataSource {
     }
     private static void addParcelToFirebase( Parcel parcel) {
         //String key = Parcel.getId().toString();
-        int a;
+        //int a;
         String key = parcelsRef.push().getKey();
         parcelsRef.child(key).setValue(parcel).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
