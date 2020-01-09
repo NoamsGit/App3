@@ -25,5 +25,4 @@ public interface ParcelDAO {
     @Query("Delete From Parcels")
     void deleteAllNotes();
 
-    //void insert(Parcel parcel);
 }
